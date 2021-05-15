@@ -1,7 +1,7 @@
 const app = () => {
     const song = document.querySelector('.song');
     const play = document.querySelector('.play');
-    const replay = document.querySelector(".replay");
+    const replay = document.querySelector('.replay');
     const outline = document.querySelector('.moving-outline circle');
     const video= document.querySelector('.vid-container video');
     
