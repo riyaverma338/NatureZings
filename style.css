@@ -160,3 +160,58 @@ video {
     height: 60px;
 }
 
+/*@media (min-width: 600px) {
+    .footer-text {
+        font-size: small;
+    }
+    .sound-picker button img{
+        height: 30px;
+
+    }
+}*/
+@media screen and (max-width: 600px) {
+    /*.footer-text {
+        font-size: xx-small;
+    }
+        .sound-picker{
+            flex-direction: column;
+            height: 100%;
+            width: fit-content;
+        }
+        .vid-container {
+            height: 100%;
+            width: 100%;
+            background-size: 100%;
+        }*/
+
+.footer-text{
+    font-size: small;
+}
+.app{
+    flex-direction: column;
+}
+
+.sound-picker{
+    flex-direction: row;
+}
+.time-select{
+    flex-direction: row;
+    font-size: small;
+}
+.time-select button{
+    font-size: small;
+}
+.player-container svg{
+    height: 120%;
+}
+.time-display{
+    bottom: -30%;
+    font-size: 30px;
+}
+.sound-picker button{
+    
+
+}
+
+    
+}
