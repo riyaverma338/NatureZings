@@ -209,7 +209,8 @@ video {
     font-size: 30px;
 }
 .sound-picker button{
-    
+    height: 80px;
+    width: 80px;
 
 }
 
