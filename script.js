@@ -1,14 +1,13 @@
-window.onload = ()=> {
+window.onload=()=>{
   if(window.outerWidth<=600){
-    if(this.getAttribute("data-video")=="./rain.mp4")
-    video.src = "./mrain.mp4"
-    else{
-      video.src = "./mbeach.mp4"
-    }
+    const video = document.querySelector('.vid-container video');
+    video.src='./mbeach.mp4';
   }
 }
 const app = () => {
     const song = document.querySelector('.song');
+    const video = document.querySelector('.vid-container video');
+
     const play = document.querySelector('.play');
     const replay = document.querySelector('.replay');
     const outline = document.querySelector('.moving-outline circle');
@@ -36,14 +35,18 @@ const app = () => {
       sounds.forEach(sound => {
         sound.addEventListener("click", function() {
           song.src = this.getAttribute("data-sound");
-          if(outerWidth<=600){
-            if(this.getAttribute("data-video")=="./rain.mp4")
-            video.src = "./mrain.mp4"
+          if(window.outerWidth<=600){
+            if(this.getAttribute("data-video")==="./rain.mp4")
+            {
+              video.src='./mrain.mp4';
+            }
             else{
-              video.src = "./mbeach.mp4"
+              video.src='./mbeach.mp4';
             }
           }
+          else{
           video.src = this.getAttribute("data-video");
+          }
           checkPlaying(song);
         });
       });
